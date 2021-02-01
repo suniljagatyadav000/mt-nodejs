@@ -24,10 +24,10 @@ app.get('/', function (req, res) {
 
 const mysql = require('mysql');
 const pool = mysql.createPool({
-	host: '157.41.93.130',
-	user: 'u233274077_teenpattinew',
-	password: 'Teenpattinew@1234',
-	database: 'u233274077_teenpattinew',
+	host: 'us-cdbr-east-03.cleardb.com',
+	user: 'bab12772c06ab1',
+	password: 'heroku_2e4c8d1298a283e',
+	database: '16347152',
 	
 	
 /*	host: '162.241.123.123',
