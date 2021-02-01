@@ -24,10 +24,10 @@ app.get('/', function (req, res) {
 
 const mysql = require('mysql');
 const pool = mysql.createPool({
-	host: 'us-cdbr-east-03.cleardb.com',
-	user: 'bab12772c06ab1',
-	password: 'heroku_2e4c8d1298a283e',
-	database: '16347152',
+	host: 'localhost',
+	user: 'root',
+	password: '',
+	database: 'teenpatti',
 	
 	
 /*	host: '162.241.123.123',
@@ -1159,8 +1159,7 @@ function RegisterMySql(data, lSocket) {
 	data.status = "deactive";
 	data.referral_code = referralCodeGenerator.alphaNumeric('uppercase', 3, 2);
 	data.guest = "1";
-	data.email="null";
-	
+
 	let hash = bcrypt.hashSync(data.password, 10);
 	var post = {
 		name: data.name, password: hash, username: data.username, email: data.email, chips: data.chips, cash: data.cash, referral_code: data.referral_code,
